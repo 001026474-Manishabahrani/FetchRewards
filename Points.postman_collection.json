@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "c1a59037-616f-4d5a-9dcc-c4effbf95446",
+		"name": "Points",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:80/pointBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/pointBalance",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pointBalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:80/spendPoints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"points\": 5000 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/spendPoints",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"spendPoints"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:80/addTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"payer\": \"DANNON\", \"points\": 300, \"timestamp\": \"2020-10-31T10:00:00Z\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/addTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
